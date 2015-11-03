@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetPhoteDetail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="bytJf" type="s:base64Binary" />
+            <s:element minOccurs="0" maxOccurs="1" name="bytCtrl" type="s:base64Binary" />
+            <s:element minOccurs="1" maxOccurs="1" name="dtmNow" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPhoteDetailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPhoteDetailResult" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetPhoteDetailSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPhoteDetail" />
+  </wsdl:message>
+  <wsdl:message name="GetPhoteDetailSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPhoteDetailResponse" />
+  </wsdl:message>
+  <wsdl:portType name="JFServiceSoap">
+    <wsdl:operation name="GetPhoteDetail">
+      <wsdl:input message="tns:GetPhoteDetailSoapIn" />
+      <wsdl:output message="tns:GetPhoteDetailSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="JFServiceSoap" type="tns:JFServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetPhoteDetail">
+      <soap:operation soapAction="http://tempuri.org/GetPhoteDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="JFServiceSoap12" type="tns:JFServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetPhoteDetail">
+      <soap12:operation soapAction="http://tempuri.org/GetPhoteDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="JFService">
+    <wsdl:port name="JFServiceSoap" binding="tns:JFServiceSoap">
+      <soap:address location="http://localhost:1580/JFService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="JFServiceSoap12" binding="tns:JFServiceSoap12">
+      <soap12:address location="http://localhost:1580/JFService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

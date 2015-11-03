@@ -1,0 +1,85 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hotel.Form", "Hotel\Hotel.Form.csproj", "{27D88145-B5F6-465E-A260-7C0C11C63981}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hotel.Model", "Hotel.Model\Hotel.Model.csproj", "{55A3237A-9532-48F7-BA3B-37690D9AF86E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hotel.BLL", "Hotel.BLL\Hotel.BLL.csproj", "{CAF32306-FE04-438D-95A1-2CEBFE553FFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hotel.Common", "Hotel.Common\Hotel.Common.csproj", "{B581BEB2-9DA8-466B-B2CF-765C2E6C9088}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hotel.DLL", "Hotel.DLL\Hotel.DLL.csproj", "{FBE46EC0-B73C-4C7E-8D5E-B661CC5940DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hotel.DAL", "Hotel.DAL\Hotel.DAL.csproj", "{03E5891F-338F-427C-996E-3AC455CFA4D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hotel.JFWebService", "Hotel.JFWebService\Hotel.JFWebService.csproj", "{C7727FA6-4732-4EDA-B7D4-FAC9442B0DA3}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 8
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://moss:8080/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Hotel.BLL\\Hotel.BLL.csproj
+		SccProjectName1 = Hotel.BLL
+		SccLocalPath1 = Hotel.BLL
+		SccProjectUniqueName2 = Hotel.Common\\Hotel.Common.csproj
+		SccProjectName2 = Hotel.Common
+		SccLocalPath2 = Hotel.Common
+		SccProjectUniqueName3 = Hotel.DAL\\Hotel.DAL.csproj
+		SccProjectName3 = Hotel.DAL
+		SccLocalPath3 = Hotel.DAL
+		SccProjectUniqueName4 = Hotel.DLL\\Hotel.DLL.csproj
+		SccProjectName4 = Hotel.DLL
+		SccLocalPath4 = Hotel.DLL
+		SccProjectUniqueName5 = Hotel.Model\\Hotel.Model.csproj
+		SccProjectName5 = Hotel.Model
+		SccLocalPath5 = Hotel.Model
+		SccProjectUniqueName6 = Hotel\\Hotel.Form.csproj
+		SccProjectName6 = Hotel
+		SccLocalPath6 = Hotel
+		SccProjectUniqueName7 = Hotel.JFWebService\\Hotel.JFWebService.csproj
+		SccProjectName7 = Hotel.JFWebService
+		SccLocalPath7 = Hotel.JFWebService
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{27D88145-B5F6-465E-A260-7C0C11C63981}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27D88145-B5F6-465E-A260-7C0C11C63981}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27D88145-B5F6-465E-A260-7C0C11C63981}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27D88145-B5F6-465E-A260-7C0C11C63981}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55A3237A-9532-48F7-BA3B-37690D9AF86E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55A3237A-9532-48F7-BA3B-37690D9AF86E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55A3237A-9532-48F7-BA3B-37690D9AF86E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55A3237A-9532-48F7-BA3B-37690D9AF86E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAF32306-FE04-438D-95A1-2CEBFE553FFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAF32306-FE04-438D-95A1-2CEBFE553FFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAF32306-FE04-438D-95A1-2CEBFE553FFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAF32306-FE04-438D-95A1-2CEBFE553FFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B581BEB2-9DA8-466B-B2CF-765C2E6C9088}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B581BEB2-9DA8-466B-B2CF-765C2E6C9088}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B581BEB2-9DA8-466B-B2CF-765C2E6C9088}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B581BEB2-9DA8-466B-B2CF-765C2E6C9088}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBE46EC0-B73C-4C7E-8D5E-B661CC5940DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBE46EC0-B73C-4C7E-8D5E-B661CC5940DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBE46EC0-B73C-4C7E-8D5E-B661CC5940DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBE46EC0-B73C-4C7E-8D5E-B661CC5940DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03E5891F-338F-427C-996E-3AC455CFA4D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03E5891F-338F-427C-996E-3AC455CFA4D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03E5891F-338F-427C-996E-3AC455CFA4D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03E5891F-338F-427C-996E-3AC455CFA4D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7727FA6-4732-4EDA-B7D4-FAC9442B0DA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7727FA6-4732-4EDA-B7D4-FAC9442B0DA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7727FA6-4732-4EDA-B7D4-FAC9442B0DA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7727FA6-4732-4EDA-B7D4-FAC9442B0DA3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

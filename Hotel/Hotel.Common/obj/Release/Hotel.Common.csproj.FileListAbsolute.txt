@@ -1,0 +1,20 @@
+F:\Hotel\Hotel.Common\bin\Release\Hotel.Common.dll
+F:\Hotel\Hotel.Common\bin\Release\Hotel.Common.pdb
+F:\Hotel\Hotel.Common\obj\Release\ResolveAssemblyReference.cache
+F:\Hotel\Hotel.Common\obj\Release\Hotel.Common.dll
+F:\Hotel\Hotel.Common\obj\Release\Hotel.Common.pdb
+D:\Hotel\Hotel.Common\bin\Release\Hotel.Common.dll
+D:\Hotel\Hotel.Common\bin\Release\Hotel.Common.pdb
+D:\Hotel\Hotel.Common\obj\Release\ResolveAssemblyReference.cache
+D:\Hotel\Hotel.Common\obj\Release\Hotel.Common.dll
+D:\Hotel\Hotel.Common\obj\Release\Hotel.Common.pdb
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel.Common\bin\Release\Hotel.Common.dll
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel.Common\bin\Release\Hotel.Common.pdb
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel.Common\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel.Common\obj\Release\Hotel.Common.dll
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel.Common\obj\Release\Hotel.Common.pdb
+F:\yidong\索引任务\Hotel\Hotel.Common\bin\Release\Hotel.Common.dll
+F:\yidong\索引任务\Hotel\Hotel.Common\bin\Release\Hotel.Common.pdb
+F:\yidong\索引任务\Hotel\Hotel.Common\obj\Release\ResolveAssemblyReference.cache
+F:\yidong\索引任务\Hotel\Hotel.Common\obj\Release\Hotel.Common.dll
+F:\yidong\索引任务\Hotel\Hotel.Common\obj\Release\Hotel.Common.pdb

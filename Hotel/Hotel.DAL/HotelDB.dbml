@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="HotelDB" Class="HotelDBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Table Name="dbo.BAS_FLOOR_INFO" Member="BAS_FLOOR_INFO">
+    <Type Name="BAS_FLOOR_INFO">
+      <Column Name="FLOOR_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FLOOR_NAME" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="STATUS" Type="System.Char" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="CREATE_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CREATE_USERID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="BAS_FLOOR_INFO_BAS_ROOM_INFO" Member="BAS_ROOM_INFO" ThisKey="FLOOR_ID" OtherKey="FLOOR_ID" Type="BAS_ROOM_INFO" />
+    </Type>
+  </Table>
+  <Table Name="dbo.BAS_GOODS_INFO" Member="BAS_GOODS_INFO">
+    <Type Name="BAS_GOODS_INFO">
+      <Column Name="GOODS_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="GOODS_NAME" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="GOODS_UNIT" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="PRICE" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="TYPE" Type="System.Char" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="STATUS" Type="System.Char" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SYS_LOOKUP_CODE" Member="SYS_LOOKUP_CODE">
+    <Type Name="SYS_LOOKUP_CODE">
+      <Column Name="CODE_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TABLE_NAME" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="COLUMN_NAME" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="CODE_NO" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="CODE_DESC" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="CREATE_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CREATE_USERID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SYS_PARAMETER" Member="SYS_PARAMETER">
+    <Type Name="SYS_PARAMETER">
+      <Column Name="PARAM_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PARAM_NO" Type="System.String" DbType="VarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="PARAM_NAME" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="PARAM_DESC" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="VALUE1" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="VALUE2" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="VALUE3" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SYS_ROLE_INFO" Member="SYS_ROLE_INFO">
+    <Type Name="SYS_ROLE_INFO">
+      <Column Name="ROLE_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ROLE_NAME" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Association Name="SYS_ROLE_INFO_SYS_USER_INFO" Member="SYS_USER_INFO" ThisKey="ROLE_ID" OtherKey="ROLE_ID" Type="SYS_USER_INFO" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CONSUME_DETAIL" Member="CONSUME_DETAIL">
+    <Type Name="CONSUME_DETAIL">
+      <Column Name="CONSUME_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="STAY_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="GOODS_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CREATE_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CREATE_USERID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UPDATE_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UPDATE_USERID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UNIT_PRICE" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="NUMBER" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="TOTAL" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CUSTOMER_INFO" Member="CUSTOMER_INFO">
+    <Type Name="CUSTOMER_INFO">
+      <Column Name="CUSTOMER_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ID_CARD" Type="System.String" DbType="VarChar(18) NOT NULL" CanBeNull="false" />
+      <Column Name="NAME" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="SEX" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="NATION" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="BIRTHDAY" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ADDRESS" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="COMPANY" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="PHONE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PICTURE" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="TYPE" Type="System.Char" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="CREATE_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CREATE_USERID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UPDATE_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UPDATE_USERID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ORDER_INFO" Member="ORDER_INFO">
+    <Type Name="ORDER_INFO">
+      <Column Name="ORDER_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NAME" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="PHONE" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ID_CARD" Type="System.String" DbType="VarChar(18)" CanBeNull="true" />
+      <Column Name="ROOM_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ROOM_RATE" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="START_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="END_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="KEEP_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="NOTICE" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="CREATE_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CREATE_USERID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UPDATE_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UPDATE_USERID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="STATUS" Type="System.Char" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HAND_OVER_INFO" Member="HAND_OVER_INFO">
+    <Type Name="HAND_OVER_INFO">
+      <Column Name="HAND_OVER_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="C_USER_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="N_USER_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="START_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="END_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="FROM_LAST_MONEY" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="HAND_OVER_MONEY" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="HAND_IN_MONEY" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="CURRENT_DEPOSIT" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="CURRENT_PAID" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="TO_NEXT_MONEY" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="CREATE_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CREATE_USERID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PHONE_CAT" Member="PHONE_CAT">
+    <Type Name="PHONE_CAT">
+      <Column Name="CAT_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CAT_DESC" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="CAT_RATE" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CALL_LIST" Member="CALL_LIST">
+    <Type Name="CALL_LIST">
+      <Column Name="LIST_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ROOM_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PHONE" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="STAY_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FREE_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CAT_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="START_TIME" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="END_TIME" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CREATE_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CREATE_USERID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.BAS_ROOM_INFO" Member="BAS_ROOM_INFO">
+    <Type Name="BAS_ROOM_INFO">
+      <Column Name="ROOM_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ROOM_NO" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="ROOM_TYPE" Type="System.Char" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="ROOM_RATES" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ROOM_PHONE" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="STATUS" Type="System.Char" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="FLOOR_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CREATE_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CREATE_USERID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UPDATE_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UPDATE_USERID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ROOM_NOTICE" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Association Name="BAS_FLOOR_INFO_BAS_ROOM_INFO" Member="BAS_FLOOR_INFO" ThisKey="FLOOR_ID" OtherKey="FLOOR_ID" Type="BAS_FLOOR_INFO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CUSTOMER_STAY_INFO" Member="CUSTOMER_STAY_INFO">
+    <Type Name="CUSTOMER_STAY_INFO">
+      <Column Name="STAY_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="STAY_NO" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ROOM_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MAIN_ROOM_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="START_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="END_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="DEPOSIT" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ROOM_RATES" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="PAY_TYPE" Type="System.Char" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="STATUS" Type="System.Char" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="NOTICE" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="HOURS" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PAID_MONEY" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ROOM_STAY_TYPE" Type="System.Char" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="CREATE_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CREATE_USERID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UPDATE_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UPDATE_USERID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TOTAL_MONEY" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SYS_USER_INFO" Member="SYS_USER_INFO">
+    <Type Name="SYS_USER_INFO">
+      <Column Name="USER_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="USER_NO" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="USER_NAME" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="PASSWORD" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="STATUS" Type="System.Char" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="ROLE_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="LAST_LOGIN_IP" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="LAST_LOGIN_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CREATE_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CREATE_USERID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UPDATE_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UPDATE_USERID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SKIN_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="SYS_ROLE_INFO_SYS_USER_INFO" Member="SYS_ROLE_INFO" ThisKey="ROLE_ID" OtherKey="ROLE_ID" Type="SYS_ROLE_INFO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CUSTOMER_STAY_HIS" Member="CUSTOMER_STAY_HIS">
+    <Type Name="CUSTOMER_STAY_HIS">
+      <Column Name="HIS_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="STAY_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CUSTOMER_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="STAY_TYPE" Type="System.Char" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="HIS_STATUS" Type="System.Char" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="CREATE_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CREATE_USERID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UPDATE_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UPDATE_USERID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="START_TIME" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="END_TIME" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.STAY_RATE" Member="STAY_RATE">
+    <Type Name="STAY_RATE">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="STAY_RATE" Member="STAY_RATE1" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="DAYS" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

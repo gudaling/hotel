@@ -1,0 +1,56 @@
+F:\Hotel\Hotel.BLL\bin\Release\Hotel.BLL.dll.config
+F:\Hotel\Hotel.BLL\bin\Release\Hotel.BLL.dll
+F:\Hotel\Hotel.BLL\bin\Release\Hotel.BLL.XmlSerializers.dll
+F:\Hotel\Hotel.BLL\bin\Release\Hotel.BLL.pdb
+F:\Hotel\Hotel.BLL\bin\Release\Hotel.Common.dll
+F:\Hotel\Hotel.BLL\bin\Release\Hotel.DAL.dll
+F:\Hotel\Hotel.BLL\bin\Release\Hotel.Model.dll
+F:\Hotel\Hotel.BLL\bin\Release\Hotel.DAL.pdb
+F:\Hotel\Hotel.BLL\bin\Release\Hotel.Common.pdb
+F:\Hotel\Hotel.BLL\bin\Release\Hotel.Model.pdb
+F:\Hotel\Hotel.BLL\obj\Release\ResolveAssemblyReference.cache
+F:\Hotel\Hotel.BLL\obj\Release\Hotel.BLL.dll
+F:\Hotel\Hotel.BLL\obj\Release\Hotel.BLL.pdb
+F:\Hotel\Hotel.BLL\obj\Release\Hotel.BLL.XmlSerializers.dll
+D:\Hotel\Hotel.BLL\obj\Release\ResolveAssemblyReference.cache
+D:\Hotel\Hotel.BLL\obj\Release\Hotel.BLL.XmlSerializers.dll
+D:\Hotel\Hotel.BLL\bin\Release\Hotel.BLL.dll.config
+D:\Hotel\Hotel.BLL\bin\Release\Hotel.BLL.dll
+D:\Hotel\Hotel.BLL\bin\Release\Hotel.BLL.XmlSerializers.dll
+D:\Hotel\Hotel.BLL\bin\Release\Hotel.BLL.pdb
+D:\Hotel\Hotel.BLL\bin\Release\Hotel.Common.dll
+D:\Hotel\Hotel.BLL\bin\Release\Hotel.DAL.dll
+D:\Hotel\Hotel.BLL\bin\Release\Hotel.Model.dll
+D:\Hotel\Hotel.BLL\bin\Release\Hotel.DAL.pdb
+D:\Hotel\Hotel.BLL\bin\Release\Hotel.Common.pdb
+D:\Hotel\Hotel.BLL\bin\Release\Hotel.Model.pdb
+D:\Hotel\Hotel.BLL\obj\Release\Hotel.BLL.dll
+D:\Hotel\Hotel.BLL\obj\Release\Hotel.BLL.pdb
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel.BLL\bin\Release\Hotel.BLL.dll.config
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel.BLL\bin\Release\Hotel.BLL.dll
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel.BLL\bin\Release\Hotel.BLL.XmlSerializers.dll
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel.BLL\bin\Release\Hotel.BLL.pdb
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel.BLL\bin\Release\Hotel.Common.dll
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel.BLL\bin\Release\Hotel.DAL.dll
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel.BLL\bin\Release\Hotel.Model.dll
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel.BLL\bin\Release\Hotel.DAL.pdb
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel.BLL\bin\Release\Hotel.Common.pdb
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel.BLL\bin\Release\Hotel.Model.pdb
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel.BLL\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel.BLL\obj\Release\Hotel.BLL.dll
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel.BLL\obj\Release\Hotel.BLL.pdb
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel.BLL\obj\Release\Hotel.BLL.XmlSerializers.dll
+F:\yidong\索引任务\Hotel\Hotel.BLL\bin\Release\Hotel.BLL.dll.config
+F:\yidong\索引任务\Hotel\Hotel.BLL\bin\Release\Hotel.BLL.dll
+F:\yidong\索引任务\Hotel\Hotel.BLL\bin\Release\Hotel.BLL.XmlSerializers.dll
+F:\yidong\索引任务\Hotel\Hotel.BLL\bin\Release\Hotel.BLL.pdb
+F:\yidong\索引任务\Hotel\Hotel.BLL\bin\Release\Hotel.Common.dll
+F:\yidong\索引任务\Hotel\Hotel.BLL\bin\Release\Hotel.DAL.dll
+F:\yidong\索引任务\Hotel\Hotel.BLL\bin\Release\Hotel.Model.dll
+F:\yidong\索引任务\Hotel\Hotel.BLL\bin\Release\Hotel.DAL.pdb
+F:\yidong\索引任务\Hotel\Hotel.BLL\bin\Release\Hotel.Common.pdb
+F:\yidong\索引任务\Hotel\Hotel.BLL\bin\Release\Hotel.Model.pdb
+F:\yidong\索引任务\Hotel\Hotel.BLL\obj\Release\ResolveAssemblyReference.cache
+F:\yidong\索引任务\Hotel\Hotel.BLL\obj\Release\Hotel.BLL.dll
+F:\yidong\索引任务\Hotel\Hotel.BLL\obj\Release\Hotel.BLL.pdb
+F:\yidong\索引任务\Hotel\Hotel.BLL\obj\Release\Hotel.BLL.XmlSerializers.dll

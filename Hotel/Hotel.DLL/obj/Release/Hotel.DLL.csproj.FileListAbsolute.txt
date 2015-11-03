@@ -1,0 +1,44 @@
+F:\Hotel\Hotel.DLL\bin\Release\CVRApi.dll
+F:\Hotel\Hotel.DLL\bin\Release\IndexsoftNewIDCard.dll
+F:\Hotel\Hotel.DLL\bin\Release\sdtapi.dll
+F:\Hotel\Hotel.DLL\bin\Release\termb.dll
+F:\Hotel\Hotel.DLL\bin\Release\WltRS.dll
+F:\Hotel\Hotel.DLL\bin\Release\Termb.Lic
+F:\Hotel\Hotel.DLL\bin\Release\Hotel.DLL.dll
+F:\Hotel\Hotel.DLL\bin\Release\Hotel.DLL.pdb
+F:\Hotel\Hotel.DLL\obj\Release\ResolveAssemblyReference.cache
+F:\Hotel\Hotel.DLL\obj\Release\Hotel.DLL.dll
+F:\Hotel\Hotel.DLL\obj\Release\Hotel.DLL.pdb
+D:\Hotel\Hotel.DLL\bin\Release\CVRApi.dll
+D:\Hotel\Hotel.DLL\bin\Release\IndexsoftNewIDCard.dll
+D:\Hotel\Hotel.DLL\bin\Release\sdtapi.dll
+D:\Hotel\Hotel.DLL\bin\Release\termb.dll
+D:\Hotel\Hotel.DLL\bin\Release\WltRS.dll
+D:\Hotel\Hotel.DLL\bin\Release\Termb.Lic
+D:\Hotel\Hotel.DLL\bin\Release\Hotel.DLL.dll
+D:\Hotel\Hotel.DLL\bin\Release\Hotel.DLL.pdb
+D:\Hotel\Hotel.DLL\obj\Release\ResolveAssemblyReference.cache
+D:\Hotel\Hotel.DLL\obj\Release\Hotel.DLL.dll
+D:\Hotel\Hotel.DLL\obj\Release\Hotel.DLL.pdb
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel.DLL\bin\Release\CVRApi.dll
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel.DLL\bin\Release\IndexsoftNewIDCard.dll
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel.DLL\bin\Release\sdtapi.dll
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel.DLL\bin\Release\termb.dll
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel.DLL\bin\Release\WltRS.dll
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel.DLL\bin\Release\Termb.Lic
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel.DLL\bin\Release\Hotel.DLL.dll
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel.DLL\bin\Release\Hotel.DLL.pdb
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel.DLL\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel.DLL\obj\Release\Hotel.DLL.dll
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel.DLL\obj\Release\Hotel.DLL.pdb
+F:\yidong\索引任务\Hotel\Hotel.DLL\bin\Release\CVRApi.dll
+F:\yidong\索引任务\Hotel\Hotel.DLL\bin\Release\IndexsoftNewIDCard.dll
+F:\yidong\索引任务\Hotel\Hotel.DLL\bin\Release\sdtapi.dll
+F:\yidong\索引任务\Hotel\Hotel.DLL\bin\Release\termb.dll
+F:\yidong\索引任务\Hotel\Hotel.DLL\bin\Release\WltRS.dll
+F:\yidong\索引任务\Hotel\Hotel.DLL\bin\Release\Termb.Lic
+F:\yidong\索引任务\Hotel\Hotel.DLL\bin\Release\Hotel.DLL.dll
+F:\yidong\索引任务\Hotel\Hotel.DLL\bin\Release\Hotel.DLL.pdb
+F:\yidong\索引任务\Hotel\Hotel.DLL\obj\Release\ResolveAssemblyReference.cache
+F:\yidong\索引任务\Hotel\Hotel.DLL\obj\Release\Hotel.DLL.dll
+F:\yidong\索引任务\Hotel\Hotel.DLL\obj\Release\Hotel.DLL.pdb

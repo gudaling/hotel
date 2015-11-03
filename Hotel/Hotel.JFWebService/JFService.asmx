@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="C#" CodeBehind="JFService.asmx.cs" Class="Hotel.JFWebService.JFService" %>

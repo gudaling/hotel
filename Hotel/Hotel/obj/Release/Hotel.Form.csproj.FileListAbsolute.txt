@@ -1,0 +1,215 @@
+F:\Hotel\Hotel\bin\Release\IndexsoftNewIDCard.dll
+F:\Hotel\Hotel\bin\Release\CVRApi.dll
+F:\Hotel\Hotel\bin\Release\sdtapi.dll
+F:\Hotel\Hotel\bin\Release\termb.dll
+F:\Hotel\Hotel\bin\Release\WltRS.dll
+F:\Hotel\Hotel\bin\Release\Termb.Lic
+F:\Hotel\Hotel\bin\Release\Hotel.exe.config
+F:\Hotel\Hotel\bin\Release\Hotel.exe
+F:\Hotel\Hotel\bin\Release\Hotel.BLL.dll
+F:\Hotel\Hotel\bin\Release\Hotel.Common.dll
+F:\Hotel\Hotel\bin\Release\Hotel.DLL.dll
+F:\Hotel\Hotel\bin\Release\Hotel.Model.dll
+F:\Hotel\Hotel\bin\Release\IrisSkin2.dll
+F:\Hotel\Hotel\bin\Release\Hotel.DAL.dll
+F:\Hotel\Hotel\bin\Release\Hotel.DAL.pdb
+F:\Hotel\Hotel\bin\Release\Hotel.Common.pdb
+F:\Hotel\Hotel\bin\Release\Hotel.DLL.pdb
+F:\Hotel\Hotel\bin\Release\Hotel.BLL.pdb
+F:\Hotel\Hotel\bin\Release\Hotel.Model.pdb
+F:\Hotel\Hotel\bin\Release\Hotel.BLL.XmlSerializers.dll
+F:\Hotel\Hotel\obj\Release\ResolveAssemblyReference.cache
+F:\Hotel\Hotel\obj\Release\Hotel.BaseForm.resources
+F:\Hotel\Hotel\obj\Release\Hotel.FormAddPay.resources
+F:\Hotel\Hotel\obj\Release\Hotel.FormChangePsw.resources
+F:\Hotel\Hotel\obj\Release\Hotel.FormChangeRoom.resources
+F:\Hotel\Hotel\obj\Release\Hotel.FormControl.resources
+F:\Hotel\Hotel\obj\Release\Hotel.FormCustomerStayRpt.resources
+F:\Hotel\Hotel\obj\Release\Hotel.FormHandHisRpt.resources
+F:\Hotel\Hotel\obj\Release\Hotel.FormHandOver.resources
+F:\Hotel\Hotel\obj\Release\Hotel.FormInComeRpt.resources
+F:\Hotel\Hotel\obj\Release\Hotel.FormKeyRoomNo.resources
+F:\Hotel\Hotel\obj\Release\Hotel.FormLockScreen.resources
+F:\Hotel\Hotel\obj\Release\Hotel.FormLogin.resources
+F:\Hotel\Hotel\obj\Release\Hotel.FormMain.resources
+F:\Hotel\Hotel\obj\Release\Hotel.FormModifyRoomState.resources
+F:\Hotel\Hotel\obj\Release\Hotel.FormNewOrder.resources
+F:\Hotel\Hotel\obj\Release\Hotel.FormOneCustomer.resources
+F:\Hotel\Hotel\obj\Release\Hotel.FormOrders.resources
+F:\Hotel\Hotel\obj\Release\Hotel.FormPayMoney.resources
+F:\Hotel\Hotel\obj\Release\Hotel.FormPhoneList.resources
+F:\Hotel\Hotel\obj\Release\Hotel.FormReport.resources
+F:\Hotel\Hotel\obj\Release\Hotel.FormReports.resources
+F:\Hotel\Hotel\obj\Release\Hotel.FormReturnDeposit.resources
+F:\Hotel\Hotel\obj\Release\Hotel.FormRoomDetail.resources
+F:\Hotel\Hotel\obj\Release\Hotel.FormSelectOrder.resources
+F:\Hotel\Hotel\obj\Release\Hotel.FormTeamCustomers.resources
+F:\Hotel\Hotel\obj\Release\Hotel.FormTeamRoomSelector.resources
+F:\Hotel\Hotel\obj\Release\Hotel.Properties.Resources.resources
+F:\Hotel\Hotel\obj\Release\Hotel.RptHelper.resources
+F:\Hotel\Hotel\obj\Release\Hotel.Form.csproj.GenerateResource.Cache
+F:\Hotel\Hotel\obj\Release\Hotel.exe
+D:\Hotel\Hotel\bin\Release\CVRApi.dll
+D:\Hotel\Hotel\bin\Release\IndexsoftNewIDCard.dll
+D:\Hotel\Hotel\bin\Release\sdtapi.dll
+D:\Hotel\Hotel\bin\Release\termb.dll
+D:\Hotel\Hotel\bin\Release\WltRS.dll
+D:\Hotel\Hotel\bin\Release\Termb.Lic
+D:\Hotel\Hotel\bin\Release\Hotel.exe.config
+D:\Hotel\Hotel\bin\Release\Hotel.exe
+D:\Hotel\Hotel\bin\Release\Hotel.BLL.dll
+D:\Hotel\Hotel\bin\Release\Hotel.Common.dll
+D:\Hotel\Hotel\bin\Release\Hotel.DLL.dll
+D:\Hotel\Hotel\bin\Release\Hotel.Model.dll
+D:\Hotel\Hotel\bin\Release\IrisSkin2.dll
+D:\Hotel\Hotel\bin\Release\Hotel.DAL.dll
+D:\Hotel\Hotel\bin\Release\Hotel.DAL.pdb
+D:\Hotel\Hotel\bin\Release\Hotel.Common.pdb
+D:\Hotel\Hotel\bin\Release\Hotel.DLL.pdb
+D:\Hotel\Hotel\bin\Release\Hotel.BLL.pdb
+D:\Hotel\Hotel\bin\Release\Hotel.Model.pdb
+D:\Hotel\Hotel\bin\Release\Hotel.BLL.XmlSerializers.dll
+D:\Hotel\Hotel\obj\Release\ResolveAssemblyReference.cache
+D:\Hotel\Hotel\obj\Release\Hotel.BaseForm.resources
+D:\Hotel\Hotel\obj\Release\Hotel.FormAddPay.resources
+D:\Hotel\Hotel\obj\Release\Hotel.FormChangePsw.resources
+D:\Hotel\Hotel\obj\Release\Hotel.FormChangeRoom.resources
+D:\Hotel\Hotel\obj\Release\Hotel.FormControl.resources
+D:\Hotel\Hotel\obj\Release\Hotel.FormCustomerStayRpt.resources
+D:\Hotel\Hotel\obj\Release\Hotel.FormHandHisRpt.resources
+D:\Hotel\Hotel\obj\Release\Hotel.FormHandOver.resources
+D:\Hotel\Hotel\obj\Release\Hotel.FormInComeRpt.resources
+D:\Hotel\Hotel\obj\Release\Hotel.FormKeyRoomNo.resources
+D:\Hotel\Hotel\obj\Release\Hotel.FormLockScreen.resources
+D:\Hotel\Hotel\obj\Release\Hotel.FormLogin.resources
+D:\Hotel\Hotel\obj\Release\Hotel.FormMain.resources
+D:\Hotel\Hotel\obj\Release\Hotel.FormModifyRoomState.resources
+D:\Hotel\Hotel\obj\Release\Hotel.FormNewOrder.resources
+D:\Hotel\Hotel\obj\Release\Hotel.FormOneCustomer.resources
+D:\Hotel\Hotel\obj\Release\Hotel.FormOrders.resources
+D:\Hotel\Hotel\obj\Release\Hotel.FormPayMoney.resources
+D:\Hotel\Hotel\obj\Release\Hotel.FormPhoneList.resources
+D:\Hotel\Hotel\obj\Release\Hotel.FormReport.resources
+D:\Hotel\Hotel\obj\Release\Hotel.FormReports.resources
+D:\Hotel\Hotel\obj\Release\Hotel.FormReturnDeposit.resources
+D:\Hotel\Hotel\obj\Release\Hotel.FormRoomDetail.resources
+D:\Hotel\Hotel\obj\Release\Hotel.FormSelectOrder.resources
+D:\Hotel\Hotel\obj\Release\Hotel.FormTeamCustomers.resources
+D:\Hotel\Hotel\obj\Release\Hotel.FormTeamRoomSelector.resources
+D:\Hotel\Hotel\obj\Release\Hotel.Properties.Resources.resources
+D:\Hotel\Hotel\obj\Release\Hotel.RptHelper.resources
+D:\Hotel\Hotel\obj\Release\Hotel.Form.csproj.GenerateResource.Cache
+D:\Hotel\Hotel\obj\Release\Hotel.exe
+F:\Hotel\Hotel\obj\Release\Hotel.FormSetSkin.resources
+D:\Hotel\Hotel\obj\Release\Hotel.FormSetSkin.resources
+D:\Hotel\Hotel\obj\Release\Hotel.FormConsumeDetail.resources
+F:\Hotel\Hotel\obj\Release\Hotel.FormConsumeDetail.resources
+F:\Hotel\Hotel\obj\Release\Hotel.FormStayRateRpt.resources
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel\bin\Release\CVRApi.dll
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel\bin\Release\IndexsoftNewIDCard.dll
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel\bin\Release\sdtapi.dll
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel\bin\Release\termb.dll
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel\bin\Release\WltRS.dll
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel\bin\Release\Termb.Lic
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel\bin\Release\Hotel.exe.config
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel\bin\Release\Hotel.exe
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel\bin\Release\Hotel.BLL.dll
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel\bin\Release\Hotel.Common.dll
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel\bin\Release\Hotel.DLL.dll
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel\bin\Release\Hotel.Model.dll
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel\bin\Release\IrisSkin2.dll
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel\bin\Release\Hotel.DAL.dll
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel\bin\Release\Hotel.DAL.pdb
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel\bin\Release\Hotel.Common.pdb
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel\bin\Release\Hotel.DLL.pdb
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel\bin\Release\Hotel.BLL.pdb
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel\bin\Release\Hotel.Model.pdb
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel\bin\Release\Hotel.BLL.XmlSerializers.dll
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel\obj\Release\Hotel.BaseForm.resources
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel\obj\Release\Hotel.FormAddPay.resources
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel\obj\Release\Hotel.FormChangePsw.resources
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel\obj\Release\Hotel.FormChangeRoom.resources
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel\obj\Release\Hotel.FormConsumeDetail.resources
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel\obj\Release\Hotel.FormControl.resources
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel\obj\Release\Hotel.FormCustomerStayRpt.resources
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel\obj\Release\Hotel.FormHandHisRpt.resources
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel\obj\Release\Hotel.FormHandOver.resources
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel\obj\Release\Hotel.FormInComeRpt.resources
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel\obj\Release\Hotel.FormKeyRoomNo.resources
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel\obj\Release\Hotel.FormLockScreen.resources
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel\obj\Release\Hotel.FormLogin.resources
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel\obj\Release\Hotel.FormMain.resources
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel\obj\Release\Hotel.FormModifyRoomState.resources
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel\obj\Release\Hotel.FormNewOrder.resources
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel\obj\Release\Hotel.FormOneCustomer.resources
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel\obj\Release\Hotel.FormOrders.resources
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel\obj\Release\Hotel.FormPayMoney.resources
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel\obj\Release\Hotel.FormPhoneList.resources
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel\obj\Release\Hotel.FormReport.resources
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel\obj\Release\Hotel.FormReports.resources
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel\obj\Release\Hotel.FormReturnDeposit.resources
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel\obj\Release\Hotel.FormRoomDetail.resources
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel\obj\Release\Hotel.FormSelectOrder.resources
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel\obj\Release\Hotel.FormSetSkin.resources
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel\obj\Release\Hotel.FormStayRateRpt.resources
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel\obj\Release\Hotel.FormTeamCustomers.resources
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel\obj\Release\Hotel.FormTeamRoomSelector.resources
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel\obj\Release\Hotel.Properties.Resources.resources
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel\obj\Release\Hotel.RptHelper.resources
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel\obj\Release\Hotel.Form.csproj.GenerateResource.Cache
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel\obj\Release\Hotel.exe
+F:\yidong\索引任务\Hotel\Hotel\bin\Release\IndexsoftNewIDCard.dll
+F:\yidong\索引任务\Hotel\Hotel\bin\Release\CVRApi.dll
+F:\yidong\索引任务\Hotel\Hotel\bin\Release\sdtapi.dll
+F:\yidong\索引任务\Hotel\Hotel\bin\Release\termb.dll
+F:\yidong\索引任务\Hotel\Hotel\bin\Release\WltRS.dll
+F:\yidong\索引任务\Hotel\Hotel\bin\Release\Termb.Lic
+F:\yidong\索引任务\Hotel\Hotel\bin\Release\Hotel.exe.config
+F:\yidong\索引任务\Hotel\Hotel\bin\Release\Hotel.exe
+F:\yidong\索引任务\Hotel\Hotel\bin\Release\Hotel.BLL.dll
+F:\yidong\索引任务\Hotel\Hotel\bin\Release\Hotel.Common.dll
+F:\yidong\索引任务\Hotel\Hotel\bin\Release\Hotel.DLL.dll
+F:\yidong\索引任务\Hotel\Hotel\bin\Release\Hotel.Model.dll
+F:\yidong\索引任务\Hotel\Hotel\bin\Release\IrisSkin2.dll
+F:\yidong\索引任务\Hotel\Hotel\bin\Release\Hotel.DAL.dll
+F:\yidong\索引任务\Hotel\Hotel\bin\Release\Hotel.DAL.pdb
+F:\yidong\索引任务\Hotel\Hotel\bin\Release\Hotel.Common.pdb
+F:\yidong\索引任务\Hotel\Hotel\bin\Release\Hotel.DLL.pdb
+F:\yidong\索引任务\Hotel\Hotel\bin\Release\Hotel.BLL.pdb
+F:\yidong\索引任务\Hotel\Hotel\bin\Release\Hotel.Model.pdb
+F:\yidong\索引任务\Hotel\Hotel\bin\Release\Hotel.BLL.XmlSerializers.dll
+F:\yidong\索引任务\Hotel\Hotel\obj\Release\ResolveAssemblyReference.cache
+F:\yidong\索引任务\Hotel\Hotel\obj\Release\Hotel.BaseForm.resources
+F:\yidong\索引任务\Hotel\Hotel\obj\Release\Hotel.FormAddPay.resources
+F:\yidong\索引任务\Hotel\Hotel\obj\Release\Hotel.FormChangePsw.resources
+F:\yidong\索引任务\Hotel\Hotel\obj\Release\Hotel.FormChangeRoom.resources
+F:\yidong\索引任务\Hotel\Hotel\obj\Release\Hotel.FormConsumeDetail.resources
+F:\yidong\索引任务\Hotel\Hotel\obj\Release\Hotel.FormControl.resources
+F:\yidong\索引任务\Hotel\Hotel\obj\Release\Hotel.FormCustomerStayRpt.resources
+F:\yidong\索引任务\Hotel\Hotel\obj\Release\Hotel.FormHandHisRpt.resources
+F:\yidong\索引任务\Hotel\Hotel\obj\Release\Hotel.FormHandOver.resources
+F:\yidong\索引任务\Hotel\Hotel\obj\Release\Hotel.FormInComeRpt.resources
+F:\yidong\索引任务\Hotel\Hotel\obj\Release\Hotel.FormKeyRoomNo.resources
+F:\yidong\索引任务\Hotel\Hotel\obj\Release\Hotel.FormLockScreen.resources
+F:\yidong\索引任务\Hotel\Hotel\obj\Release\Hotel.FormLogin.resources
+F:\yidong\索引任务\Hotel\Hotel\obj\Release\Hotel.FormMain.resources
+F:\yidong\索引任务\Hotel\Hotel\obj\Release\Hotel.FormModifyRoomState.resources
+F:\yidong\索引任务\Hotel\Hotel\obj\Release\Hotel.FormNewOrder.resources
+F:\yidong\索引任务\Hotel\Hotel\obj\Release\Hotel.FormOneCustomer.resources
+F:\yidong\索引任务\Hotel\Hotel\obj\Release\Hotel.FormOrders.resources
+F:\yidong\索引任务\Hotel\Hotel\obj\Release\Hotel.FormPayMoney.resources
+F:\yidong\索引任务\Hotel\Hotel\obj\Release\Hotel.FormPhoneList.resources
+F:\yidong\索引任务\Hotel\Hotel\obj\Release\Hotel.FormReport.resources
+F:\yidong\索引任务\Hotel\Hotel\obj\Release\Hotel.FormReports.resources
+F:\yidong\索引任务\Hotel\Hotel\obj\Release\Hotel.FormReturnDeposit.resources
+F:\yidong\索引任务\Hotel\Hotel\obj\Release\Hotel.FormRoomDetail.resources
+F:\yidong\索引任务\Hotel\Hotel\obj\Release\Hotel.FormSelectOrder.resources
+F:\yidong\索引任务\Hotel\Hotel\obj\Release\Hotel.FormSetSkin.resources
+F:\yidong\索引任务\Hotel\Hotel\obj\Release\Hotel.FormStayRateRpt.resources
+F:\yidong\索引任务\Hotel\Hotel\obj\Release\Hotel.FormTeamCustomers.resources
+F:\yidong\索引任务\Hotel\Hotel\obj\Release\Hotel.FormTeamRoomSelector.resources
+F:\yidong\索引任务\Hotel\Hotel\obj\Release\Hotel.Properties.Resources.resources
+F:\yidong\索引任务\Hotel\Hotel\obj\Release\Hotel.RptHelper.resources
+F:\yidong\索引任务\Hotel\Hotel\obj\Release\Hotel.Form.csproj.GenerateResource.Cache
+F:\yidong\索引任务\Hotel\Hotel\obj\Release\Hotel.exe

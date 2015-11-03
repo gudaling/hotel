@@ -1,0 +1,589 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{27D88145-B5F6-465E-A260-7C0C11C63981}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Hotel</RootNamespace>
+    <AssemblyName>Hotel</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>Hotel.ico</ApplicationIcon>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>http://localhost/Hotel/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="IndexsoftNewIDCard, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Hotel.DLL\IndexsoftNewIDCard.dll</HintPath>
+    </Reference>
+    <Reference Include="IrisSkin2, Version=2006.3.22.45, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Hotel.DLL\IrisSkin2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForm.Designer.cs">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddPay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddPay.Designer.cs">
+      <DependentUpon>FormAddPay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChangePsw.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChangePsw.Designer.cs">
+      <DependentUpon>FormChangePsw.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChangeRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChangeRoom.Designer.cs">
+      <DependentUpon>FormChangeRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConsumeDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConsumeDetail.Designer.cs">
+      <DependentUpon>FormConsumeDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormControl.Designer.cs">
+      <DependentUpon>FormControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCustomerStayRpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCustomerStayRpt.Designer.cs">
+      <DependentUpon>FormCustomerStayRpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHandHisRpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHandHisRpt.Designer.cs">
+      <DependentUpon>FormHandHisRpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHandOver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHandOver.Designer.cs">
+      <DependentUpon>FormHandOver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInComeRpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInComeRpt.Designer.cs">
+      <DependentUpon>FormInComeRpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormKeyRoomNo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKeyRoomNo.Designer.cs">
+      <DependentUpon>FormKeyRoomNo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLockScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLockScreen.Designer.cs">
+      <DependentUpon>FormLockScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormModifyRoomState.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormModifyRoomState.Designer.cs">
+      <DependentUpon>FormModifyRoomState.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNewOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNewOrder.Designer.cs">
+      <DependentUpon>FormNewOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOneCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOneCustomer.Designer.cs">
+      <DependentUpon>FormOneCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOrders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOrders.Designer.cs">
+      <DependentUpon>FormOrders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPayMoney.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPayMoney.Designer.cs">
+      <DependentUpon>FormPayMoney.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPhoneList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPhoneList.Designer.cs">
+      <DependentUpon>FormPhoneList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReport.Designer.cs">
+      <DependentUpon>FormReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReports.Designer.cs">
+      <DependentUpon>FormReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReturnDeposit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReturnDeposit.Designer.cs">
+      <DependentUpon>FormReturnDeposit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRoomDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRoomDetail.Designer.cs">
+      <DependentUpon>FormRoomDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSelectOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSelectOrder.Designer.cs">
+      <DependentUpon>FormSelectOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSetSkin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSetSkin.Designer.cs">
+      <DependentUpon>FormSetSkin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStayRateRpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStayRateRpt.Designer.cs">
+      <DependentUpon>FormStayRateRpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTeamCustomers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTeamCustomers.Designer.cs">
+      <DependentUpon>FormTeamCustomers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTeamRoomSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTeamRoomSelector.Designer.cs">
+      <DependentUpon>FormTeamRoomSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BaseForm.resx">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddPay.resx">
+      <DependentUpon>FormAddPay.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormChangePsw.resx">
+      <DependentUpon>FormChangePsw.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormChangeRoom.resx">
+      <DependentUpon>FormChangeRoom.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConsumeDetail.resx">
+      <DependentUpon>FormConsumeDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormControl.resx">
+      <DependentUpon>FormControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCustomerStayRpt.resx">
+      <DependentUpon>FormCustomerStayRpt.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHandHisRpt.resx">
+      <DependentUpon>FormHandHisRpt.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHandOver.resx">
+      <DependentUpon>FormHandOver.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInComeRpt.resx">
+      <DependentUpon>FormInComeRpt.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKeyRoomNo.resx">
+      <DependentUpon>FormKeyRoomNo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLockScreen.resx">
+      <DependentUpon>FormLockScreen.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormModifyRoomState.resx">
+      <DependentUpon>FormModifyRoomState.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNewOrder.resx">
+      <DependentUpon>FormNewOrder.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOneCustomer.resx">
+      <DependentUpon>FormOneCustomer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOrders.resx">
+      <DependentUpon>FormOrders.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPayMoney.resx">
+      <DependentUpon>FormPayMoney.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPhoneList.resx">
+      <DependentUpon>FormPhoneList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReport.resx">
+      <DependentUpon>FormReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReports.resx">
+      <DependentUpon>FormReports.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReturnDeposit.resx">
+      <DependentUpon>FormReturnDeposit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRoomDetail.resx">
+      <DependentUpon>FormRoomDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSelectOrder.resx">
+      <DependentUpon>FormSelectOrder.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSetSkin.resx">
+      <DependentUpon>FormSetSkin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStayRateRpt.resx">
+      <DependentUpon>FormStayRateRpt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTeamCustomers.resx">
+      <DependentUpon>FormTeamCustomers.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTeamRoomSelector.resx">
+      <DependentUpon>FormTeamRoomSelector.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptHelper.resx">
+      <DependentUpon>RptHelper.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RptHelper.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RptHelper.Designer.cs">
+      <DependentUpon>RptHelper.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Hotel.BLL\Hotel.BLL.csproj">
+      <Project>{CAF32306-FE04-438D-95A1-2CEBFE553FFC}</Project>
+      <Name>Hotel.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hotel.Common\Hotel.Common.csproj">
+      <Project>{B581BEB2-9DA8-466B-B2CF-765C2E6C9088}</Project>
+      <Name>Hotel.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hotel.DLL\Hotel.DLL.csproj">
+      <Project>{FBE46EC0-B73C-4C7E-8D5E-B661CC5940DE}</Project>
+      <Name>Hotel.DLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hotel.Model\Hotel.Model.csproj">
+      <Project>{55A3237A-9532-48F7-BA3B-37690D9AF86E}</Project>
+      <Name>Hotel.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xp系统桌面图标下载1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xp系统桌面图标下载9.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xp系统桌面图标下载0.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xp系统桌面图标下载14.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xp系统桌面图标下载11.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xp系统桌面图标下载91.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xp系统桌面图标下载01.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xp系统桌面图标下载3.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xp系统桌面图标下载47.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xp系统桌面图标下载33.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xp系统桌面图标下载8.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xp系统桌面图标下载34.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xp系统桌面图标下载16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xp系统桌面图标下载331.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xp系统桌面图标下载17.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xp系统桌面图标下载21.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xp系统桌面图标下载12.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xp系统桌面图标下载4.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xp系统桌面图标下载46.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xp系统桌面图标下载18.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xp系统桌面图标下载19.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xp系统桌面图标下载111.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Resources\xp系统桌面图标下载40.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Hotel.ico" />
+    <Content Include="Resources\baner.gif" />
+    <Content Include="Resources\baner.jpg" />
+    <None Include="Resources\FormIco.ico" />
+    <None Include="MacOS.ssk" />
+    <None Include="MP10.ssk" />
+    <None Include="office2007.ssk" />
+    <None Include="Resources\Login.jpg" />
+    <None Include="Resources\SaveNotice.ico" />
+    <None Include="Resources\Room.ico" />
+    <None Include="Resources\DefaultWoman.gif" />
+    <None Include="Resources\DefaultMan.gif" />
+    <None Include="PageColor2.ssk">
+    </None>
+    <None Include="Resources\Lock.ico" />
+    <None Include="Resources\Reflash.ico" />
+    <None Include="Resources\Excel.ico" />
+    <None Include="Resources\Print.ico" />
+    <None Include="Resources\Report.ico" />
+    <None Include="Resources\Search.ico" />
+    <None Include="Resources\Chart.ico" />
+    <None Include="Resources\HourRoom.ico" />
+    <None Include="Resources\Cancel.ico" />
+    <None Include="Resources\CleanRoom.ico" />
+    <None Include="Resources\InRoom.ico" />
+    <None Include="Resources\Cleaning.ico" />
+    <None Include="Resources\xp系统桌面图标下载42.ico" />
+    <None Include="Resources\xp系统桌面图标下载38.ico" />
+    <None Include="Resources\xp系统桌面图标下载461.ico" />
+    <None Include="Vista2_color2.ssk" />
+    <None Include="Vista2_color7.ssk">
+    </None>
+    <None Include="Wave.ssk" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

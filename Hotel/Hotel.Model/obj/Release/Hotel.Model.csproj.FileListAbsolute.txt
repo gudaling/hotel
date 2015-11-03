@@ -1,0 +1,20 @@
+F:\Hotel\Hotel.Model\bin\Release\Hotel.Model.dll
+F:\Hotel\Hotel.Model\bin\Release\Hotel.Model.pdb
+F:\Hotel\Hotel.Model\obj\Release\ResolveAssemblyReference.cache
+F:\Hotel\Hotel.Model\obj\Release\Hotel.Model.dll
+F:\Hotel\Hotel.Model\obj\Release\Hotel.Model.pdb
+D:\Hotel\Hotel.Model\bin\Release\Hotel.Model.dll
+D:\Hotel\Hotel.Model\bin\Release\Hotel.Model.pdb
+D:\Hotel\Hotel.Model\obj\Release\ResolveAssemblyReference.cache
+D:\Hotel\Hotel.Model\obj\Release\Hotel.Model.dll
+D:\Hotel\Hotel.Model\obj\Release\Hotel.Model.pdb
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel.Model\bin\Release\Hotel.Model.dll
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel.Model\bin\Release\Hotel.Model.pdb
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel.Model\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel.Model\obj\Release\Hotel.Model.dll
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel.Model\obj\Release\Hotel.Model.pdb
+F:\yidong\索引任务\Hotel\Hotel.Model\bin\Release\Hotel.Model.dll
+F:\yidong\索引任务\Hotel\Hotel.Model\bin\Release\Hotel.Model.pdb
+F:\yidong\索引任务\Hotel\Hotel.Model\obj\Release\ResolveAssemblyReference.cache
+F:\yidong\索引任务\Hotel\Hotel.Model\obj\Release\Hotel.Model.dll
+F:\yidong\索引任务\Hotel\Hotel.Model\obj\Release\Hotel.Model.pdb

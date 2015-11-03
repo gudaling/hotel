@@ -1,0 +1,40 @@
+F:\Hotel\Hotel.DAL\bin\Release\Hotel.DAL.dll.config
+F:\Hotel\Hotel.DAL\bin\Release\Hotel.DAL.dll
+F:\Hotel\Hotel.DAL\bin\Release\Hotel.DAL.pdb
+F:\Hotel\Hotel.DAL\bin\Release\Hotel.Common.dll
+F:\Hotel\Hotel.DAL\bin\Release\Hotel.Model.dll
+F:\Hotel\Hotel.DAL\bin\Release\Hotel.Common.pdb
+F:\Hotel\Hotel.DAL\bin\Release\Hotel.Model.pdb
+F:\Hotel\Hotel.DAL\obj\Release\ResolveAssemblyReference.cache
+F:\Hotel\Hotel.DAL\obj\Release\Hotel.DAL.dll
+F:\Hotel\Hotel.DAL\obj\Release\Hotel.DAL.pdb
+D:\Hotel\Hotel.DAL\bin\Release\Hotel.DAL.dll.config
+D:\Hotel\Hotel.DAL\bin\Release\Hotel.DAL.dll
+D:\Hotel\Hotel.DAL\bin\Release\Hotel.DAL.pdb
+D:\Hotel\Hotel.DAL\bin\Release\Hotel.Common.dll
+D:\Hotel\Hotel.DAL\bin\Release\Hotel.Model.dll
+D:\Hotel\Hotel.DAL\bin\Release\Hotel.Common.pdb
+D:\Hotel\Hotel.DAL\bin\Release\Hotel.Model.pdb
+D:\Hotel\Hotel.DAL\obj\Release\ResolveAssemblyReference.cache
+D:\Hotel\Hotel.DAL\obj\Release\Hotel.DAL.dll
+D:\Hotel\Hotel.DAL\obj\Release\Hotel.DAL.pdb
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel.DAL\bin\Release\Hotel.DAL.dll.config
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel.DAL\bin\Release\Hotel.DAL.dll
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel.DAL\bin\Release\Hotel.DAL.pdb
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel.DAL\bin\Release\Hotel.Common.dll
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel.DAL\bin\Release\Hotel.Model.dll
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel.DAL\bin\Release\Hotel.Common.pdb
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel.DAL\bin\Release\Hotel.Model.pdb
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel.DAL\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel.DAL\obj\Release\Hotel.DAL.dll
+C:\Documents and Settings\yangjj\桌面\Hotel\Hotel.DAL\obj\Release\Hotel.DAL.pdb
+F:\yidong\索引任务\Hotel\Hotel.DAL\bin\Release\Hotel.DAL.dll.config
+F:\yidong\索引任务\Hotel\Hotel.DAL\bin\Release\Hotel.DAL.dll
+F:\yidong\索引任务\Hotel\Hotel.DAL\bin\Release\Hotel.DAL.pdb
+F:\yidong\索引任务\Hotel\Hotel.DAL\bin\Release\Hotel.Common.dll
+F:\yidong\索引任务\Hotel\Hotel.DAL\bin\Release\Hotel.Model.dll
+F:\yidong\索引任务\Hotel\Hotel.DAL\bin\Release\Hotel.Common.pdb
+F:\yidong\索引任务\Hotel\Hotel.DAL\bin\Release\Hotel.Model.pdb
+F:\yidong\索引任务\Hotel\Hotel.DAL\obj\Release\ResolveAssemblyReference.cache
+F:\yidong\索引任务\Hotel\Hotel.DAL\obj\Release\Hotel.DAL.dll
+F:\yidong\索引任务\Hotel\Hotel.DAL\obj\Release\Hotel.DAL.pdb
