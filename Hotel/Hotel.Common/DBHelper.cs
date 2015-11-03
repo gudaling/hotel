@@ -19,21 +19,21 @@ namespace Hotel.DataAccess
         /// <summary>
         /// 是否写Log
         /// </summary>
-        private bool IsWriteLog = false;
+        private readonly bool _isWriteLog = false;
         /// <summary>
         /// 定义连接字符串
         /// </summary>
-        private string myConnectionString = string.Empty;
+        private readonly string _myConnectionString = string.Empty;
 
         public DBHelper()
         {
-            IsWriteLog = ConfigurationManager.AppSettings["IS_WRITE_SQL"].Trim().ToUpper().Equals("YES") ? true : false;
-            myConnectionString = ConfigurationManager.ConnectionStrings["HotelConnection"].ConnectionString;
+            _isWriteLog = ConfigurationManager.AppSettings["IS_WRITE_SQL"].Trim().ToUpper().Equals("YES") ? true : false;
+            _myConnectionString = ConfigurationManager.ConnectionStrings["HotelConnection"].ConnectionString;
         }
         public DBHelper(string sConnnStr, bool WriteLog)
         {
-            IsWriteLog = WriteLog;
-            myConnectionString = sConnnStr;
+            _isWriteLog = WriteLog;
+            _myConnectionString = sConnnStr;
         }
         /// <summary>
         /// 返回得到DataSet对象
@@ -42,7 +42,7 @@ namespace Hotel.DataAccess
         /// <returns></returns>
         public DataSet ExecuteDataSet(string sSql)
         {
-            SqlConnection myConnection = new SqlConnection(myConnectionString);
+            SqlConnection myConnection = new SqlConnection(_myConnectionString);
             DataSet ds = new DataSet();
             using (myConnection)
             {
@@ -54,7 +54,7 @@ namespace Hotel.DataAccess
                 SqlDataAdapter da = new SqlDataAdapter(myCommand);
                 da.Fill(ds);
             }
-            Log.WriteLog(sSql, IsWriteLog);
+            Log.WriteLog(sSql, _isWriteLog);
             return ds;
         }
         /// <summary>
@@ -64,7 +64,7 @@ namespace Hotel.DataAccess
         /// <returns></returns>
         public int ExcuteNonQuery(string sSql)
         {
-            SqlConnection myConnection = new SqlConnection(myConnectionString);
+            SqlConnection myConnection = new SqlConnection(_myConnectionString);
             using (myConnection)
             {
                 if (myConnection.State == ConnectionState.Closed)
@@ -72,7 +72,7 @@ namespace Hotel.DataAccess
                     myConnection.Open();
                 }
                 SqlCommand myCommand = new SqlCommand(sSql, myConnection);
-                if (IsWriteLog)
+                if (_isWriteLog)
                 {
                     Log.WriteLog(sSql);
                 }
@@ -103,14 +103,14 @@ namespace Hotel.DataAccess
         /// <returns></returns>
         public SqlDataReader ExecuteReader(string sSql)
         {
-            SqlConnection myConnection = new SqlConnection(myConnectionString);
+            SqlConnection myConnection = new SqlConnection(_myConnectionString);
 
             if (myConnection.State == ConnectionState.Closed)
             {
                 myConnection.Open();
             }
             SqlCommand myCommand = new SqlCommand(sSql, myConnection);
-            if (IsWriteLog)
+            if (_isWriteLog)
             {
                 Log.WriteLog(sSql);
             }
@@ -124,7 +124,7 @@ namespace Hotel.DataAccess
         /// <returns></returns>
         public object ExecuteScalar(string sSql)
         {
-            SqlConnection myConnection = new SqlConnection(myConnectionString);
+            SqlConnection myConnection = new SqlConnection(_myConnectionString);
             using (myConnection)
             {
                 if (myConnection.State == ConnectionState.Closed)
@@ -132,7 +132,7 @@ namespace Hotel.DataAccess
                     myConnection.Open();
                 }
                 SqlCommand myCommand = new SqlCommand(sSql, myConnection);
-                if (IsWriteLog)
+                if (_isWriteLog)
                 {
                     Log.WriteLog(sSql);
                 }
