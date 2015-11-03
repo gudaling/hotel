@@ -18,7 +18,7 @@ namespace Hotel.BLL
         }
         public List<JFModel> GetPhoneDetail(JFModel mJf, ObjectControls oCtrl, DateTime dtmNow)
         {
-            return (List<JFModel>)cmn.DeserializeObject(jfs.GetPhoteDetail(cmn.SerializeObject(mJf), cmn.SerializeObject(oCtrl), dtmNow));
+            return (List<JFModel>)Cmn.DeserializeObject(jfs.GetPhoteDetail(Cmn.SerializeObject(mJf), Cmn.SerializeObject(oCtrl), dtmNow));
         }
     }
 }

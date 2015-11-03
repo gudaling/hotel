@@ -35,7 +35,7 @@ namespace Hotel.BLL
         /// <returns></returns>
         public PrintModel GetPrintSet(PrintModel mPrint, Object[] parame)
         {
-            if (cmn.CheckEOF(mPrint.PrintDetailList))
+            if (Cmn.CheckEOF(mPrint.PrintDetailList))
             {
                 foreach (PrintDetailModel mPrintDetail in mPrint.PrintDetailList)
                 {

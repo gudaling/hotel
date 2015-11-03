@@ -53,7 +53,7 @@ namespace Hotel.BLL
             oCtrl.Add(MCtrl.ByColumnName);
             oCtrl.Add(MCtrl.ByTableName);
             List<SysLookupCodeModel> listLookUpCode = bLookUpCode.GetSysLookUpCode(mCode, oCtrl);
-            if (cmn.CheckEOF(listLookUpCode))
+            if (Cmn.CheckEOF(listLookUpCode))
             {
                 return listLookUpCode[0].CodeDesc;
             }
@@ -143,7 +143,7 @@ namespace Hotel.BLL
 
             #region 计算商品费用
 
-            if (cmn.CheckEOF(listConsumeInfo))
+            if (Cmn.CheckEOF(listConsumeInfo))
             {
                 foreach (ConsumeDetailModel mConsume in listConsumeInfo)
                 {
@@ -201,7 +201,7 @@ namespace Hotel.BLL
         /// <returns></returns>
         public string GetUsedDays(DateTime dtStartDate)
         {
-            double day = cmn.DateBaseDate.Subtract(dtStartDate).TotalDays;
+            double day = Cmn.DateBaseDate.Subtract(dtStartDate).TotalDays;
             double hours = (day - Math.Truncate(day)) * 24;
             return Math.Truncate(day).ToString("0") + "天" + hours.ToString("0") + "小时";
         }
@@ -214,7 +214,7 @@ namespace Hotel.BLL
         /// <returns></returns>
         public string GetStayNo(int nStayId,List<SysParameterModel> listSysParameter)
         {
-            return ToParameter(listSysParameter, "DEFAULT_STAY_NO_START").Value1 + cmn.DateBaseDate.ToString("yyyyMMdd") + nStayId.ToString();
+            return ToParameter(listSysParameter, "DEFAULT_STAY_NO_START").Value1 + Cmn.DateBaseDate.ToString("yyyyMMdd") + nStayId.ToString();
         }
 
         /// <summary>
@@ -262,7 +262,7 @@ namespace Hotel.BLL
                 mc.CustomerStayHisInfo = new CustomerStayHisModel();
                 if (!string.IsNullOrEmpty(sStayType))
                 {
-                    mc.CustomerStayHisInfo.StayType = cmn.ToChar(sStayType);
+                    mc.CustomerStayHisInfo.StayType = Cmn.ToChar(sStayType);
                     oCtrl.Add(MCtrl.ByStayType);
                 }
                 mc.CustomerStayHisInfo.HisStatus = cStayStatus == 'I' ? 'E' : 'O';
@@ -279,7 +279,7 @@ namespace Hotel.BLL
                     oCtrl.Reset();
                     oCtrl.Add(MCtrl.ByStayId);
                     listGetConsumeDetail = bConsume.GetConsumeList(mConsume, oCtrl);
-                    if (cmn.CheckEOF(listGetConsumeDetail))
+                    if (Cmn.CheckEOF(listGetConsumeDetail))
                     {
                         mCustomerStay.ConSumeDetailList = listGetConsumeDetail;
                     }
@@ -304,9 +304,9 @@ namespace Hotel.BLL
             ObjectControls oCtrl = new ObjectControls();
             foreach (BasRoomModel mRoom in listRoomInfo)
             {
-                mStayInfo.RoomInfo.RoomIdGroup += cmn.MakeGroup(mRoom.RoomId.ToString());
+                mStayInfo.RoomInfo.RoomIdGroup += Cmn.MakeGroup(mRoom.RoomId.ToString());
             }
-            mStayInfo.RoomInfo.RoomIdGroup = cmn.RemoveLastDou(mStayInfo.RoomInfo.RoomIdGroup);
+            mStayInfo.RoomInfo.RoomIdGroup = Cmn.RemoveLastDou(mStayInfo.RoomInfo.RoomIdGroup);
 
             mStayInfo.Status = cStayStatus;
             mStayInfo.CustomerList = new List<CustomerModel>();
@@ -314,19 +314,19 @@ namespace Hotel.BLL
             mc.CustomerStayHisInfo = new CustomerStayHisModel();
             if (!string.IsNullOrEmpty(sStayType))
             {
-                mc.CustomerStayHisInfo.StayType = cmn.ToChar(sStayType);
+                mc.CustomerStayHisInfo.StayType = Cmn.ToChar(sStayType);
                 oCtrl.Add(MCtrl.ByStayType);
             }
             mc.CustomerStayHisInfo.HisStatus = cStayStatus == 'I' ? 'E' : 'O';
             mStayInfo.CustomerList.Add(mc);
-            if (cmn.CheckEOF(listRoomInfo))
+            if (Cmn.CheckEOF(listRoomInfo))
             {
                 oCtrl.Add(MCtrl.ByRoomIdGroup);
             }
             oCtrl.Add(MCtrl.ByStayStatus);
             oCtrl.Add(MCtrl.ByHisStatus);
             listCustomerStayInfo = bCustomerStay.GetCustomerStayList(mStayInfo, oCtrl);
-            if (cmn.CheckEOF(listCustomerStayInfo) && IsCountConsume)
+            if (Cmn.CheckEOF(listCustomerStayInfo) && IsCountConsume)
             {
                 foreach (CustomerStayModel mCustomerStay in listCustomerStayInfo)
                 {
@@ -336,7 +336,7 @@ namespace Hotel.BLL
                     oCtrl.Reset();
                     oCtrl.Add(MCtrl.ByStayId);
                     listGetConsumeDetail = bConsume.GetConsumeList(mConsume, oCtrl);
-                    if (cmn.CheckEOF(listGetConsumeDetail))
+                    if (Cmn.CheckEOF(listGetConsumeDetail))
                     {
                         mCustomerStay.ConSumeDetailList = listGetConsumeDetail;
                     }
@@ -375,7 +375,7 @@ namespace Hotel.BLL
         {
             OrderInfoModel mOrder = new OrderInfoModel();
             mOrder.RoomInfo = mRoom;
-            mOrder.KeepDate = cmn.DateBaseDate;
+            mOrder.KeepDate = Cmn.DateBaseDate;
             mOrder.Status = 'E';
             ObjectControls oCtrl = new ObjectControls();
             oCtrl.Reset();
@@ -413,13 +413,13 @@ namespace Hotel.BLL
             {
                 if (mRoom.Status == 'I' || mRoom.Status == 'T')
                 {
-                    cmn.Show("房间已被占用,无法开单.");
+                    Cmn.Show("房间已被占用,无法开单.");
                     return false;
                 }
                 else if (mRoom.Status == 'C' || mRoom.Status == 'D')
                 {
                     string sRoomStatus = mRoom.Status == 'C' ? "清理" : "停用";
-                    if (!cmn.Confirm(string.Format("房间{0}处于{1}状态,继续开单?", mRoom.RoomNo, sRoomStatus)))
+                    if (!Cmn.Confirm(string.Format("房间{0}处于{1}状态,继续开单?", mRoom.RoomNo, sRoomStatus)))
                     {
                         return false;
                     }
@@ -536,7 +536,7 @@ namespace Hotel.BLL
                             //检查宾客信息是否存在,存在则更新较新的信息.姓名和证件号不更新
                             List<CustomerModel> listCustomerOld = GetExistCustomerInfo(mCustomer);
                             int nCustomerId = 0;
-                            if (cmn.CheckEOF(listCustomerOld))
+                            if (Cmn.CheckEOF(listCustomerOld))
                             {
                                 UpdateExsitCustomerInfo(mCustomer, listCustomerOld[0]);
                                 nCustomerId = listCustomerOld[0].CustomerId;
@@ -586,7 +586,7 @@ namespace Hotel.BLL
                             //检查宾客信息是否存在,存在则更新较新的信息.姓名和证件号不更新
                             List<CustomerModel> listCustomerOld = GetExistCustomerInfo(mCustomer);
                             int nCustomerId = 0;
-                            if (cmn.CheckEOF(listCustomerOld))
+                            if (Cmn.CheckEOF(listCustomerOld))
                             {
                                 mCustomer.CommonInfo.UpdateUserId = mCustomerStay.CommonInfo.UpdateUserId;
                                 UpdateExsitCustomerInfo(mCustomer, listCustomerOld[0]);
@@ -603,7 +603,7 @@ namespace Hotel.BLL
                             oCtrl.Add(MCtrl.ByStayId);
                             oCtrl.Add(MCtrl.ByCustomerId);
                             List<CustomerStayHisModel> listStayHis = bCustomerStay.GetStayHis(mHis, oCtrl);
-                            if (cmn.CheckEOF(listStayHis))
+                            if (Cmn.CheckEOF(listStayHis))
                             {
                                 mHis.HisId = listStayHis[0].HisId;
                                 mHis.HisStatus = mCustomer.CustomerStayHisInfo.HisStatus;
@@ -616,7 +616,7 @@ namespace Hotel.BLL
                                 //如果用户选择将房间内某一宾客离店,则该宾客的离店时间为现在.开始时间不变
                                 if (mHis.HisStatus == 'O')
                                 {
-                                    mHis.CommonInfo.EndDate = cmn.DateBaseDate;
+                                    mHis.CommonInfo.EndDate = Cmn.DateBaseDate;
                                     oCtrl.Add(MCtrl.SetEndDate);
                                 }
       
@@ -631,7 +631,7 @@ namespace Hotel.BLL
                                 mHis.CommonInfo.UpdateUserId = mCustomerStay.CommonInfo.UpdateUserId;
 
                                 //如宾客为新增加到该房间内的.则他的入住时间从现在开始,到该房间的预住结束时间为止.
-                                mHis.CommonInfo.StartDate = cmn.DateBaseDate;
+                                mHis.CommonInfo.StartDate = Cmn.DateBaseDate;
                                 mHis.CommonInfo.EndDate = mCustomerStay.CommonInfo.EndDate;
 
                                 bCustomerStay.InsertCustomerStayHis(mHis);
@@ -682,7 +682,7 @@ namespace Hotel.BLL
                     //退房时将stayhis的入住状态改为离店模式，以区分每个宾客的状态。有时候宾馆房间某一宾客会提前离开，所以需要设置每个宾客的状态。
                     //如提前离开需修改宾客登记，右击宾客详细列表，在菜单中进行离店操作。
                     //如要遇到宾客信息登记错误，需要删除，则启用DELETE键删除即可。
-                    if (cmn.CheckEOF(mCustomerStay.CustomerList))
+                    if (Cmn.CheckEOF(mCustomerStay.CustomerList))
                     {
                         foreach (CustomerModel mcustomer in mCustomerStay.CustomerList)
                         {
@@ -693,7 +693,7 @@ namespace Hotel.BLL
                             {
                                 oCtrl.Reset();
                                 mcshis.HisStatus = 'O';
-                                mcshis.CommonInfo.EndDate = cmn.DateBaseDate;
+                                mcshis.CommonInfo.EndDate = Cmn.DateBaseDate;
                                 mcshis.CommonInfo.UpdateUserId = mCustomerStay.CommonInfo.UpdateUserId;//更新人员为操作员ID
                                 oCtrl.Add(MCtrl.SetEndDate);
                                 oCtrl.Add(MCtrl.SetHisStatus);
@@ -720,9 +720,9 @@ namespace Hotel.BLL
         {
             try
             {
-                if (cmn.CheckEOF(listLatestConsume))
+                if (Cmn.CheckEOF(listLatestConsume))
                 {
-                    if (cmn.CheckEOF(listConsumeOld))
+                    if (Cmn.CheckEOF(listConsumeOld))
                     {
                         var query = listLatestConsume.Except(listConsumeOld);
                         foreach (ConsumeDetailModel mConsume in query)
@@ -771,7 +771,7 @@ namespace Hotel.BLL
                 BasGoodsModel mGoods = new BasGoodsModel();
                 mGoods.Type = 'R';
                 List<BasGoodsModel> listGoods = bGoods.GetGoodsInfo(mGoods, new ObjectControls(MCtrl.ByGoodsType));
-                if (cmn.CheckEOF(listGoods))
+                if (Cmn.CheckEOF(listGoods))
                 {
                     mConsume.GoodsId = listGoods[0].GoodsId;
                 }
@@ -782,7 +782,7 @@ namespace Hotel.BLL
                 mConsume.StayId = mCustomerStay.StayId;
                 mConsume.UnitPrice = mCustomerStay.RoomRate;
                 RoomStayType eRst = mCustomerStay.RoomStayType == 'D' ? RoomStayType.Day : RoomStayType.Hour;
-                DateTime dtNow = cmn.DateBaseDate;
+                DateTime dtNow = Cmn.DateBaseDate;
                 mConsume.Number = GetCustomerStayDays(mCustomerStay.CommonInfo.StartDate, dtNow,dtNow, eRst, listSysParameter);
                 mConsume.Total = GetTotalRates(mCustomerStay, null, listSysParameter, dtNow, 0.0);
                 mConsume.CommonInfo = new CommonModel();
@@ -796,11 +796,11 @@ namespace Hotel.BLL
                 #region 是否团队房间
                 if (mCustomerStay.MainRoomId == mCustomerStay.RoomId)
                 {
-                    if (cmn.Confirm(string.Format("{0}为主房间,变更后{1}将成为主房间,是否继续?", mCustomerStay.RoomInfo.RoomNo, mNewRoomInfo.RoomNo)))
+                    if (Cmn.Confirm(string.Format("{0}为主房间,变更后{1}将成为主房间,是否继续?", mCustomerStay.RoomInfo.RoomNo, mNewRoomInfo.RoomNo)))
                     {
                         #region 将团队房间的MainRoomId变为新ID
                         List<BasRoomModel> listTeamRoom = GetTeamRoomListByRoomId(mCustomerStay.RoomInfo, 'I');
-                        if (cmn.CheckEOF(listTeamRoom))
+                        if (Cmn.CheckEOF(listTeamRoom))
                         {
                             ObjectControls oCtrl = new ObjectControls();
                             oCtrl.Add(MCtrl.SetMainRoomId);
@@ -833,7 +833,7 @@ namespace Hotel.BLL
                 oCtrlMain.Add(MCtrl.SetHours);
                 oCtrlMain.Add(MCtrl.SetRoomRate);
                 mCustomerStay.RoomId = mNewRoomInfo.RoomId;
-                mCustomerStay.CommonInfo.StartDate = cmn.DateBaseDate;
+                mCustomerStay.CommonInfo.StartDate = Cmn.DateBaseDate;
                 double dDays = GetCustomerStayDays(mCustomerStay.CommonInfo.StartDate, mCustomerStay.CommonInfo.EndDate,mCustomerStay.CommonInfo.StartDate, eRst, listSysParameter);
 
                 mCustomerStay.Hours = eRst == RoomStayType.Day ? Convert.ToInt32(dDays * 24) : Convert.ToInt32(dDays);
@@ -864,7 +864,7 @@ namespace Hotel.BLL
         /// <returns>如果验证通过返回True,反之返回False</returns>
         public bool CheckRoomOrdered(List<OrderInfoModel>listOrderedInfo,BasRoomModel mRoom, DateTime dtStartTime,DateTime dtEndTime)
         {
-            if (cmn.CheckEOF(listOrderedInfo))
+            if (Cmn.CheckEOF(listOrderedInfo))
             {
                 var qOrder = listOrderedInfo.Where(c => c.RoomInfo.RoomId == mRoom.RoomId);
                 if (qOrder.Count() > 0 && (qOrder.First().RoomInfo.Status != 'E' ||
@@ -872,7 +872,7 @@ namespace Hotel.BLL
                      (qOrder.First().CommonInfo.StartDate < dtEndTime && qOrder.First().CommonInfo.EndDate > dtEndTime)
                     ))
                 {
-                    if (!cmn.Confirm("该房间目前处于非可用状态或者已经被预定,是否继续?"))
+                    if (!Cmn.Confirm("该房间目前处于非可用状态或者已经被预定,是否继续?"))
                     {
                         return false;
                     }
@@ -880,7 +880,7 @@ namespace Hotel.BLL
             }
             else if (mRoom.Status != 'E')
             {
-                if (!cmn.Confirm("该房间目前处于非可用状态,是否继续?"))
+                if (!Cmn.Confirm("该房间目前处于非可用状态,是否继续?"))
                 {
                     return false;
                 }
@@ -907,7 +907,7 @@ namespace Hotel.BLL
                 {
                     mHandOver.HandOverId = nHandOverId;
                     listHandOver = bHandOver.GetHandOverList(mHandOver, new ObjectControls(MCtrl.ByHandOverId));
-                    if (cmn.CheckEOF(listHandOver))
+                    if (Cmn.CheckEOF(listHandOver))
                     {
                         mCustomerStay.CommonInfo.CreateDate = listHandOver[0].CommonInfo.EndDate;
                         mHandOver.CommonInfo.StartDate = listHandOver[0].CommonInfo.EndDate;
@@ -926,7 +926,7 @@ namespace Hotel.BLL
                 mHandOver.CurrentDeposit = bCustomerStay.GetHandOverStayInfo(mCustomerStay, oCtrl).CurrentDeposit;
                 mCustomerStay.Status = 'O';
                 mHandOver.CurrentPaidMoney = bCustomerStay.GetHandOverStayInfo(mCustomerStay, oCtrl).CurrentPaidMoney;
-                mHandOver.CommonInfo.EndDate = cmn.DateBaseDate;
+                mHandOver.CommonInfo.EndDate = Cmn.DateBaseDate;
                 mHandOver.HandInMoney = 0;
                 mHandOver.HandOverMoney = mHandOver.FromLastMoney + mHandOver.CurrentDeposit + mHandOver.CurrentPaidMoney;
                 mHandOver.ToNextMoney = mHandOver.HandOverMoney;
@@ -950,7 +950,7 @@ namespace Hotel.BLL
             try
             {
                 double dPhoneTotal = 0.0;
-                if (cmn.CheckEOF(listJf))
+                if (Cmn.CheckEOF(listJf))
                 {
                     foreach (JFModel mjfTmp in listJf)
                     {
@@ -970,7 +970,7 @@ namespace Hotel.BLL
             ObjectControls oCtrl = new ObjectControls();
             oCtrl.Add(MCtrl.ByPhone);
             oCtrl.Add(MCtrl.ByStartDate);
-            mJf.PhoneNoGroup = cmn.RemoveLastDou(mJf.PhoneNoGroup);
+            mJf.PhoneNoGroup = Cmn.RemoveLastDou(mJf.PhoneNoGroup);
             return bPhone.GetPhoneDetail(mJf, oCtrl, dtmNow);
         }
 
@@ -1017,7 +1017,7 @@ namespace Hotel.BLL
                 var query = listTeamRoom.Where(c => c.RoomId != mCustomerStay.RoomId);
                 if (query.Count() > 0)
                 {
-                    if (cmn.Confirm(string.Format("房间{0}是主房间,变为散客房之后,团队的主房间将变为{1},继续?", mCustomerStay.RoomInfo.RoomNo, query.First().RoomNo)))
+                    if (Cmn.Confirm(string.Format("房间{0}是主房间,变为散客房之后,团队的主房间将变为{1},继续?", mCustomerStay.RoomInfo.RoomNo, query.First().RoomNo)))
                     {
                         List<CustomerStayModel> listTeamCustomer = new List<CustomerStayModel>();
                         listTeamCustomer = GetStayInRoomInfo(listTeamRoom, 'I',"M", false);
@@ -1122,7 +1122,7 @@ namespace Hotel.BLL
         public void DoStayRate(StayRateModel mStayRate)
         { 
             List<StayRateModel> listStayRate = bStayRate.GetStayRate(mStayRate, new ObjectControls(MCtrl.ByCreateDate));
-            if (cmn.CheckEOF(listStayRate))
+            if (Cmn.CheckEOF(listStayRate))
             {
                 listStayRate[0].StayRate = mStayRate.StayRate;
                 bStayRate.UpdateStayRate(listStayRate[0]);

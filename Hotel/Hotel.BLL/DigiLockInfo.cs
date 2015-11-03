@@ -18,7 +18,7 @@ namespace Hotel.BLL
         }
         public List<RoomListModel> GetPhoneDetail()
         {
-            return (List<RoomListModel>)cmn.DeserializeObject(hts.GetRommList());
+            return (List<RoomListModel>)Cmn.DeserializeObject(hts.GetRommList());
         }
     }
 }

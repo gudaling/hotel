@@ -23,8 +23,8 @@ namespace Hotel.BLL
         /// <returns></returns>
         public SysUserInfoModel GetUserInfo(SysUserInfoModel mUserInfo)
         {
-            var query = from c in dc.SYS_USER_INFO where (c.USER_NO == mUserInfo.UserNo && c.PASSWORD == mUserInfo.UserPassWord) || (c.USER_ID == mUserInfo.UserId && c.PASSWORD == mUserInfo.UserPassWord) join d in dc.SYS_ROLE_INFO on c.ROLE_ID equals d.ROLE_ID select new { user = c, roleName = d.ROLE_NAME };
-            Log.WriteLog(dc, query, AbBaseBll.IsWriteSql);
+            var query = from c in Dc.SYS_USER_INFO where (c.USER_NO == mUserInfo.UserNo && c.PASSWORD == mUserInfo.UserPassWord) || (c.USER_ID == mUserInfo.UserId && c.PASSWORD == mUserInfo.UserPassWord) join d in Dc.SYS_ROLE_INFO on c.ROLE_ID equals d.ROLE_ID select new { user = c, roleName = d.ROLE_NAME };
+            Log.WriteLog(Dc, query, AbBaseBll.IsWriteSql);
             SysUserInfoModel mUserInfoNew = new SysUserInfoModel();
             if (query.Count() > 0)
             {
@@ -47,8 +47,8 @@ namespace Hotel.BLL
         /// <returns></returns>
         public List<SysUserInfoModel> GetUserInfoList()
         {
-            var query = from c in dc.SYS_USER_INFO join d in dc.SYS_ROLE_INFO on c.ROLE_ID equals d.ROLE_ID select new { user = c, roleName = d.ROLE_NAME,roleId=d.ROLE_ID };
-            Log.WriteLog(dc, query, AbBaseBll.IsWriteSql);
+            var query = from c in Dc.SYS_USER_INFO join d in Dc.SYS_ROLE_INFO on c.ROLE_ID equals d.ROLE_ID select new { user = c, roleName = d.ROLE_NAME,roleId=d.ROLE_ID };
+            Log.WriteLog(Dc, query, AbBaseBll.IsWriteSql);
             List<SysUserInfoModel> listUserInfo = new List<SysUserInfoModel>();
             foreach (var value in query)
             {
@@ -91,7 +91,7 @@ namespace Hotel.BLL
         public int UpdateUserInfo(SysUserInfoModel mUser, ObjectControls oCtrl)
         {
             SYS_USER_INFO sui = new SYS_USER_INFO();
-            var query = dc.SYS_USER_INFO.Where(c => c.USER_ID == mUser.UserId);
+            var query = Dc.SYS_USER_INFO.Where(c => c.USER_ID == mUser.UserId);
             if (query.Count() > 0)
             {
                 sui = query.First();
@@ -115,9 +115,9 @@ namespace Hotel.BLL
                 {
                     sui.SKIN_ID = mUser.SkinId;
                 }
-                sui.UPDATE_DATE = cmn.DateBaseDate;
+                sui.UPDATE_DATE = Cmn.DateBaseDate;
                 sui.UPDATE_USERID = mUser.UserId;
-                dc.SubmitChanges();
+                Dc.SubmitChanges();
                 return sui.USER_ID;
             }
             return -1;
@@ -129,29 +129,29 @@ namespace Hotel.BLL
             {
                 USER_NO = mUser.UserNo,
                 STATUS = 'E',
-                CREATE_DATE = cmn.DateBaseDate,
+                CREATE_DATE = Cmn.DateBaseDate,
                 CREATE_USERID = mUser.CommonInfo.CreateUserId,
-                UPDATE_DATE = cmn.DateBaseDate,
+                UPDATE_DATE = Cmn.DateBaseDate,
                 ROLE_ID = mUser.RoleInfo.RoleId,
                 PASSWORD = mUser.UserPassWord,
                 USER_NAME = mUser.UserName,
                 SKIN_ID=mUser.SkinId,
                 UPDATE_USERID = mUser.CommonInfo.CreateUserId
             };
-            dc.SYS_USER_INFO.InsertOnSubmit(sui);
-            dc.SubmitChanges();
+            Dc.SYS_USER_INFO.InsertOnSubmit(sui);
+            Dc.SubmitChanges();
             return sui.USER_ID;
         }
 
         public void DeleteUserInfo(SysUserInfoModel mUser)
         {
-            dc.SYS_USER_INFO.DeleteAllOnSubmit(dc.SYS_USER_INFO.Where(c => c.USER_ID == mUser.UserId));
-            dc.SubmitChanges();
+            Dc.SYS_USER_INFO.DeleteAllOnSubmit(Dc.SYS_USER_INFO.Where(c => c.USER_ID == mUser.UserId));
+            Dc.SubmitChanges();
         }
 
         public List<SysRoleModel> GetRoleList()
         {
-            var query = dc.SYS_ROLE_INFO;
+            var query = Dc.SYS_ROLE_INFO;
             List<SysRoleModel> listRole = new List<SysRoleModel>();
             foreach (SYS_ROLE_INFO sui in query)
             {

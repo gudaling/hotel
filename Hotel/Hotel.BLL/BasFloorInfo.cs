@@ -16,7 +16,7 @@ namespace Hotel.BLL
         /// <returns></returns>
         public List<BasFloorModel> GetFloorInfo()
         {
-            var query = dc.BAS_FLOOR_INFO.Where(c => c.STATUS == 'E');
+            var query = Dc.BAS_FLOOR_INFO.Where(c => c.STATUS == 'E');
             List<BasFloorModel> listFloorInfo = new List<BasFloorModel>();
             foreach (BAS_FLOOR_INFO bfi in query)
             {

@@ -48,3 +48,13 @@ D:\Hotle\Hotel\Hotel.DAL\bin\Debug\Hotel.Model.pdb
 D:\Hotle\Hotel\Hotel.DAL\obj\Debug\Hotel.DAL.csprojResolveAssemblyReference.cache
 D:\Hotle\Hotel\Hotel.DAL\obj\Debug\Hotel.DAL.dll
 D:\Hotle\Hotel\Hotel.DAL\obj\Debug\Hotel.DAL.pdb
+D:\Source\hotel2\Hotel\Hotel.DAL\bin\Debug\Hotel.DAL.dll.config
+D:\Source\hotel2\Hotel\Hotel.DAL\bin\Debug\Hotel.DAL.dll
+D:\Source\hotel2\Hotel\Hotel.DAL\bin\Debug\Hotel.DAL.pdb
+D:\Source\hotel2\Hotel\Hotel.DAL\bin\Debug\Hotel.Common.dll
+D:\Source\hotel2\Hotel\Hotel.DAL\bin\Debug\Hotel.Model.dll
+D:\Source\hotel2\Hotel\Hotel.DAL\bin\Debug\Hotel.Common.pdb
+D:\Source\hotel2\Hotel\Hotel.DAL\bin\Debug\Hotel.Model.pdb
+D:\Source\hotel2\Hotel\Hotel.DAL\obj\Debug\Hotel.DAL.csprojResolveAssemblyReference.cache
+D:\Source\hotel2\Hotel\Hotel.DAL\obj\Debug\Hotel.DAL.dll
+D:\Source\hotel2\Hotel\Hotel.DAL\obj\Debug\Hotel.DAL.pdb

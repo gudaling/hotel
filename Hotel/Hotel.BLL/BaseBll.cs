@@ -13,10 +13,10 @@ namespace Hotel.BLL
 {
     public abstract class AbBaseBll
     {
-        public static string DBConnectionString = ConfigurationManager.ConnectionStrings["HotelConnection"].ConnectionString;
+        public static string DbConnectionString = ConfigurationManager.ConnectionStrings["HotelConnection"].ConnectionString;
         public static bool IsWriteSql = ConfigurationManager.AppSettings["IS_WRITE_SQL"].Trim().ToUpper().Equals("YES") ? true : false;
-        public HotelDBDataContext dc = new HotelDBDataContext(DBConnectionString);
-        public CommonLibrary cmn = new CommonLibrary();
+        public HotelDBDataContext Dc = new HotelDBDataContext(DbConnectionString);
+        public CommonLibrary Cmn = new CommonLibrary();
         public void OpenConnection(DbConnection dbc)
         {
             if (dbc.State == ConnectionState.Closed)
