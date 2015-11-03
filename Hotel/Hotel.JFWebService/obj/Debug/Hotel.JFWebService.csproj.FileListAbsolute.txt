@@ -44,3 +44,13 @@ D:\Hotle\Hotel\Hotel.JFWebService\bin\Hotel.Model.pdb
 D:\Hotle\Hotel\Hotel.JFWebService\obj\Debug\Hotel.JFWebService.csprojResolveAssemblyReference.cache
 D:\Hotle\Hotel\Hotel.JFWebService\obj\Debug\Hotel.JFWebService.dll
 D:\Hotle\Hotel\Hotel.JFWebService\obj\Debug\Hotel.JFWebService.pdb
+D:\Source\hotel2\Hotel\Hotel.JFWebService\bin\Hotel.JFWebService.dll.config
+D:\Source\hotel2\Hotel\Hotel.JFWebService\bin\Hotel.JFWebService.dll
+D:\Source\hotel2\Hotel\Hotel.JFWebService\bin\Hotel.JFWebService.pdb
+D:\Source\hotel2\Hotel\Hotel.JFWebService\bin\Hotel.Common.dll
+D:\Source\hotel2\Hotel\Hotel.JFWebService\bin\Hotel.Model.dll
+D:\Source\hotel2\Hotel\Hotel.JFWebService\bin\Hotel.Common.pdb
+D:\Source\hotel2\Hotel\Hotel.JFWebService\bin\Hotel.Model.pdb
+D:\Source\hotel2\Hotel\Hotel.JFWebService\obj\Debug\Hotel.JFWebService.csprojResolveAssemblyReference.cache
+D:\Source\hotel2\Hotel\Hotel.JFWebService\obj\Debug\Hotel.JFWebService.dll
+D:\Source\hotel2\Hotel\Hotel.JFWebService\obj\Debug\Hotel.JFWebService.pdb
